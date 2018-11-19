@@ -430,7 +430,7 @@ enum GCDAsyncUdpSocketConfig
 		#if TARGET_OS_IPHONE
 		[[NSNotificationCenter defaultCenter] addObserver:self
 		                                         selector:@selector(applicationWillEnterForeground:)
-		                                             name:UIApplicationWillEnterForegroundNotification
+		                                             name:@"UIApplicationWillEnterForegroundNotification"
 		                                           object:nil];
 		#endif
 	}
